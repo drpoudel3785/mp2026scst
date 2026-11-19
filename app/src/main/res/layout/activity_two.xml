@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#F1F5F9"
+    tools:context=".TwoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Details"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Information received from the first screen"
+        android:textSize="16sp"
+        android:textColor="#475569"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#DBEAFE"
+        android:padding="24dp"
+        android:textColor="#1E3A8A"
+        android:textSize="18sp"
+        android:lineSpacingExtra="10dp"
+        tools:text="ID: 1&#10;Name: Dhamra&#10;Address: Kathmandu" />
+
+</LinearLayout>

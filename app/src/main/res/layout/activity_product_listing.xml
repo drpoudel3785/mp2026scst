@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F9">
+
+    <!-- LinearLayout arranges elements vertically -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Store"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#1565C0"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Product 1: RelativeLayout controls positions -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/product_card_background">
+
+            <ImageView
+                android:id="@+id/imgBookOne"
+                android:layout_width="130dp"
+                android:layout_height="190dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="The Magic Faraway Tree"
+                android:src="@drawable/bookfront"/>
+
+            <TextView
+                android:id="@+id/txtBookOneName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgBookOne"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
+                android:text="The Magic Faraway Tree"
+                android:textColor="#17202A"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtBookOneDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtBookOneName"
+                android:layout_toEndOf="@id/imgBookOne"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:text="An adventure story by Enid Blyton."
+                android:textColor="#5D6D7E"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txtBookOnePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtBookOneDescription"
+                android:layout_toEndOf="@id/imgBookOne"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="12dp"
+                android:text="Rs. 1,250"
+                android:textColor="#C62828"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBookOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgBookOne"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="14dp"
+                android:text="Add to Cart"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+        <!-- Product 2 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/product_card_background">
+
+            <ImageView
+                android:id="@+id/imgBookTwo"
+                android:layout_width="130dp"
+                android:layout_height="190dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="Adventure of the Goblin Dog"
+                android:src="@drawable/bookback"/>
+
+            <TextView
+                android:id="@+id/txtBookTwoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgBookTwo"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
+                android:text="Adventure of the Goblin Dog"
+                android:textColor="#17202A"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtBookTwoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtBookTwoName"
+                android:layout_toEndOf="@id/imgBookTwo"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:text="Peter and Mary begin a magical rescue adventure."
+                android:textColor="#5D6D7E"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txtBookTwoPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtBookTwoDescription"
+                android:layout_toEndOf="@id/imgBookTwo"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="12dp"
+                android:text="Rs. 999"
+                android:textColor="#C62828"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBookTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgBookTwo"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="14dp"
+                android:text="Add to Cart"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
